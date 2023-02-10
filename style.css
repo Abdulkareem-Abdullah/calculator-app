@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100vh;
+    color: hsl(60,10%, 19%);
+}
+.container{
+    width: 100%;
+    min-height: 90vh;
+}
+.calculator{
+    width: 50%;
+    margin: 10px auto;
+}
+#header{
+    display: flex;
+    /* flex box property */
+    align-items: center;
+    justify-content: space-between;
+}
+#header h3{
+    font-weight: 800;
+    font-size: 18px;
+}
+#header small{
+    font-size: 9px;
+}
+#header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+#header div input{
+    width: 40px;
+}
+/* input[type="range"]::-webkit-slider-thumb {
+    background-color: #aaa;
+    opacity: ;
+} */
+.output{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: hsl(0, 0%, 93%);
+    padding-right: 20px;
+    margin: 20px 0;
+    border-radius: 16px;
+}
+/* it laysout the element vertically : align-items*/
+/* it laysout the element horizonatally: justify-content */
+#input-container {
+    background-color: hsl(0, 0%, 93%);
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: ;
+    it prevents over-flowing in a div container */
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px 20px;
+    /* flex
+    it  */
+}
+#input-container div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6%;
+}
+#input-container button{
+    flex: 1;
+    height: 45px;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 10px;
+    background-color: hsl(45, 7%, 89%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 0 0 hsl(35, 11%, 61%);
+    transition: 1s;
+    cursor: pointer;
+}
+#input-container button:hover {
+    background-color: hsl(60, 100%, 100%);
+}
+/* box-sizing 
+it sets how the total width and height of an element calculated
+
+*/
+#input-container #operation.blue {
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+    box-shadow: 0 3px 0 0 hsl(185, 58%, 25%);
+}
+#input-container #operation.blue:hover {
+    background-color: hsl(185, 45%, 52%);
+}
+#input-container #operation.reset {
+    width: 50%;
+    flex: 1;
+}
+#input-container #operation.equal-to {
+    width: 50%;
+    flex: 1;
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 3px 0 0 hsl(25, 99%, 27%);
+}
+#input-container #operation.equal-to:hover {
+    background-color: hsl(25, 79%, 60%);
+}
+/* input[type="range"]::-webkit-slider-thumb 
+enables styling of the input 'range'*/
+/* gap: 0 !important 
+it over-rides styling
+*/
+/* 
+Assignment: Read on Flex-box!!!
+ */
+
+
